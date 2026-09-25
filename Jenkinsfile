@@ -23,7 +23,7 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('SonarQube') {
-                    sh 'mvn sonar:sonar -Dsonar.projectKey=54.160.178.88 -Dsonar.projectName="54.160.178.88"'
+                    sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=54.160.178.88 -Dsonar.projectName="54.160.178.88"'
                 }
             }
         }
