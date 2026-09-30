@@ -27,6 +27,17 @@
         </dependency>
 
     </dependencies>
+         <distributionManagement>
+    <snapshotRepository>
+        <id>nexus</id>
+        <url>http://44.200.247.74:8081/repository/maven-repo/</url>
+    </snapshotRepository>
+
+    <repository>
+        <id>nexus</id>
+        <url>http://44.200.247.74:8081/repository/maven-repo/</url>
+    </repository>
+</distributionManagement>
 
     <build>
         <plugins>
